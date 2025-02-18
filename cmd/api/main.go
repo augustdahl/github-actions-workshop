@@ -11,7 +11,7 @@ import (
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	queryValues := r.URL.Query()
-	names := queryValues["name"
+	names := queryValues["name"]
 
 	if len(names) > 0 {
 		greeting, err := greeting.Greet(names)
